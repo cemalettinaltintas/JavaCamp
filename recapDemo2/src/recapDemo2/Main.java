@@ -1,0 +1,21 @@
+package recapDemo2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double[] myList= {6.2,7.3,4.3,5.2};
+		double total=0;
+		double max=myList[0];
+		for (double number : myList) {
+			if (max<number) {
+				max=number;
+			}
+			total=total+number;
+			System.out.println(number);
+		}
+		System.out.println("Toplam :"+total);
+		System.out.println("En Büyük :"+max);
+	}
+
+}
